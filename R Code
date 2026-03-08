@@ -1,0 +1,25 @@
+#SSSP007 Big Data Feasibility Report 
+
+#Preliminaries
+#Load library
+
+library(tidyverse)
+
+#Load data
+
+data_detected <- read.csv("C:\\Users\\User\\OneDrive - University of Stirling\\Documents\\Master's\\Spring\\SSSP007\\R Files\\mmw_detected_2019_20.csv")
+data_recorded <- read.csv("C:\\Users\\User\\OneDrive - University of Stirling\\Documents\\Master's\\Spring\\SSSP007\\R Files\\mmw_recorded_2019_20.csv")
+
+#Initial data exploration 
+
+view(data.detected)
+view(data.recorded)
+
+str(data.detected)
+str(data.recorded)
+
+summary(data.detected$CRIME.GROUP)
+hist(data.detected$CRIME.GROUP)
+
+summary(data.recorded$CRIME.GROUP)
+hist(data.recorded$CRIME.GROUP)
